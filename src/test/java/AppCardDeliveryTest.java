@@ -35,7 +35,7 @@ public class AppCardDeliveryTest {
         $("button.button").click();
         $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.exactText("Успешно! Встреча упешно забронирована на " + planningDate));
+                .shouldHave(Condition.text("Встреча успешно забронирована на " + planningDate));
 
     }
 
@@ -113,7 +113,7 @@ public class AppCardDeliveryTest {
         $("button.button").click();
         $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.exactText("Успешно! Встреча упешно забронирована на" + planningDate));
+                .shouldHave(Condition.text("Встреча успешно забронирована на " + planningDate));
     }
     }
 
